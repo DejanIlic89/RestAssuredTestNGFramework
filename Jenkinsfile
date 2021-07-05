@@ -41,15 +41,23 @@ pipeline {
             }
         }
     }
-//     post {
-//         always {
-//             //
-//         }
+    post {
+        always {
+            script {
+                allure([
+                    includeProperties: false,
+                    jdk              : '',
+                    reportBuildPolicy: 'ALWAYS',
+                    results          : [[path: 'target/allure-results']]
+                ])
+            }
+            cleanWs()
+        }
 //         success {
 //             //
 //         }
 //         failure {
 //             //
 //         }
-//     }
+    }
 }
