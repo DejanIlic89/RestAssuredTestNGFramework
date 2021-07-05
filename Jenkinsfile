@@ -11,7 +11,6 @@ pipeline {
     }
     tools {
         maven 'maven-3.6.3'
-        jdk 'java-8u221'
     }
     stages {
         stage("Build") {
