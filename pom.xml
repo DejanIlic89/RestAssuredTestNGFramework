@@ -39,7 +39,7 @@
         <dependency>
             <groupId>io.rest-assured</groupId>
             <artifactId>json-schema-validator</artifactId>
-            <version>4.3.3</version>
+            <version>4.4.0</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.skyscreamer/jsonassert -->
         <!-- used for full json body validation -->
